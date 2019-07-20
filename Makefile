@@ -1,10 +1,10 @@
 GOLANG_VERSION?=1.11.5
 SWAGGER_UI_VERSION?=3.20.6
 SWAGGER_UI_DIST_URL?=https://raw.githubusercontent.com/swagger-api/swagger-ui/v$(SWAGGER_UI_VERSION)/dist
-REGISTRY?=quay.io/opsway
+REGISTRY?=kirillmakhonin/html-to-pdf-api-server
 
 BIN:=$(shell basename "$(PWD)")
-REPO:=$(REGISTRY)/$(BIN)
+REPO:=$(REGISTRY)
 
 SHELL:=/bin/bash
 DATE:=$(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
